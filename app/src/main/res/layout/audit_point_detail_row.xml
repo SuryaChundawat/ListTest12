@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="#C75A55"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="80"
+            android:background="@color/button_material_light"
+            android:padding="1dp">
+
+            <TextView
+                android:id="@+id/text_view_audit_point_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/button_material_light"
+                android:gravity="center|left"
+                android:hint="@string/audit_point_lbl"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:background="@color/button_material_light"
+            android:padding="1dp">
+
+            <TextView
+                android:id="@+id/text_view_respones_yes_no_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/button_material_light"
+                android:gravity="center|left"
+                android:hint="@string/response_lbl"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <TextView
+
+            android:id="@+id/text_view_remark_row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/button_material_light"
+            android:gravity="center|left"
+            android:hint="@string/remarks_lbl"
+            android:paddingLeft="2dp"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_delete_row"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+
+        android:layout_marginTop="5dp"
+        android:background="@drawable/delete_button"
+        android:text="@string/button_delete_lbl"
+        android:textAppearance="@android:style/TextAppearance.Small"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

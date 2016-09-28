@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loging_outer"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Godown No."
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <Spinner
+                android:id="@+id/spGodownNo"
+                android:layout_width="match_parent"
+                android:padding="2dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:background="@drawable/border_dropdown"
+                android:entries="@array/array_testing"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinText1"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Stack No."
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:weightSum="100">
+
+            <EditText
+                android:id="@+id/etxtstackNo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Stack No."
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Lot No."
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+            <EditText
+                android:id="@+id/etxtDepLotNo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Lot No."
+                android:inputType="text"
+                android:maxLength="25"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="No. Of Bags"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtDepNoOfBags"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="No. Of Bags"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Quantity In MT"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:weightSum="100">
+
+                <EditText
+                android:id="@+id/etxtDepQuantityInMT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:hint="Quantity In MT"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Client ID"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtDepClientID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Client ID"
+                android:inputType="text"
+                android:maxLength="50"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+
+        //Client Name
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Client Name"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:weightSum="100">
+
+            <EditText
+                android:id="@+id/etxtDepClientname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Client Name"
+                android:inputType="text"
+                android:maxLength="200"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="DP ID"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtDepDPID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="DP ID"
+                android:inputType="text"
+                android:maxLength="50"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="DP Name"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/txtDepDPName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:gravity="center|left"
+                android:hint="DP Name"
+                android:maxLength="200"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorLight" />
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/submit"
+                android:onClick="depositSubmit"
+            android:text="@string/adding_lbl"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp"
+            android:layout_marginTop="15dp">
+
+            <TableLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/table1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                >
+
+                <TableRow>
+                    <TextView
+                        android:text="GSL"
+                        android:gravity="right"
+                        android:paddingLeft="3dip" />
+                    <!--<TextView
+                        android:text="Stack No."
+                        android:gravity="right"
+                        android:paddingLeft="0dip" />
+                    <TextView
+                        android:text="Lot No."
+                        android:gravity="right"
+                        android:paddingLeft="0dip" />-->
+                    <TextView
+                        android:text="No Of Bags"
+                        android:gravity="right"
+                        android:paddingLeft="3dip" />
+                    <TextView
+                        android:text="Qty"
+                        android:gravity="right"
+                        android:paddingLeft="3dip" />
+                    <TextView
+                        android:text="Client Name "
+                        android:gravity="right"
+                        android:paddingLeft="3dip" />
+                    <TextView
+                        android:text="Client Id"
+                        android:gravity="right"
+                        android:paddingLeft="3dip" />
+                    <TextView
+                        android:text="Client Name"
+                        android:gravity="right"
+                        android:paddingLeft="3dip" />
+                </TableRow>
+
+            </TableLayout>
+
+         <!--   <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:stretchColumns="0,1"
+                android:id="@+id/main_table"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+            </TableLayout>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/LinearLayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                >
+
+                <HorizontalScrollView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:stretchColumns="0,1"
+                    android:id="@+id/maintable" >
+                </TableLayout>
+
+                </HorizontalScrollView>
+            </ScrollView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_submit_Add"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llfinalAdd"
+            android:background="@drawable/submit"
+            android:onClick="submitFinalDeposit"
+            android:text="@string/submit_lbl"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+

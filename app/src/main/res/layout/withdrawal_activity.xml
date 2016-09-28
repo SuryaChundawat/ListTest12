@@ -1,0 +1,1149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loging_outer"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="1. Client Copy No"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithClientCopy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Client Copy No"
+                android:inputType="text"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="2. Exchange Type"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:weightSum="100">
+
+            <Spinner
+
+                android:id="@+id/spWithExchangeType"
+                android:dropDownSelector="#bc7272"
+                android:layout_width="match_parent"
+                android:padding="2dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:background="@drawable/border_dropdown"
+                android:entries="@array/array_testing"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:layout_height="wrap_content">
+
+            <CheckBox android:id="@+id/checkbox_meat_SCM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:text="SCM Withdrawal (for Non NCDEX )"
+                android:onClick="onCheckboxClicked"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            >
+            <CheckBox
+                android:id="@+id/checkbox_meat_Rejected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rejected Withdrawal (for NCDEX,RRn No will not be required)"
+
+                />
+
+
+
+        </LinearLayout>
+
+        //Transaction Date
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="3. State"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:weightSum="100">
+
+            <Spinner
+
+                android:id="@+id/spWithState"
+                android:layout_width="match_parent"
+                android:padding="2dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:background="@drawable/border_dropdown"
+                android:entries="@array/array_testing"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="4. Transaction Date"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <TextView
+                android:id="@+id/etxtWithTxnDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Date"
+                android:inputType="date"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="5. Location"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:weightSum="100">
+
+            <Spinner
+                android:id="@+id/spWithLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:background="@drawable/border_dropdown"
+                android:entries="@array/array_testing"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="6. CMP Name"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:weightSum="100">
+
+            <Spinner
+                android:id="@+id/spWithCMPName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:background="@drawable/border_dropdown"
+                android:entries="@array/array_testing"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="7. Truck Number"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithTruckNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Truck Number"
+                android:inputType="text"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="8. Commodity Name"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:weightSum="100">
+
+            <Spinner
+                android:id="@+id/spWithCommodityName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:background="@drawable/border_dropdown"
+                android:entries="@array/array_testing"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="9. Packing 50 kg/ 60 kg/ 90 kg/100 kg"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithPackingkg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Packing 50 kg/ 60 kg/ 90 kg/100 kg"
+                android:inputType="number"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="10. Packing Material (Jute / Plastic)"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+        android:id="@+id/spDepPackingMat"
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:weightSum="100">
+
+            <Spinner
+                android:id="@+id/spWithPackingMat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:background="@drawable/border_dropdown"
+                android:entries="@array/array_testing"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="11. Weight of Packing Material/Gunnies(gms)"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithWgtPkgMtl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Weight of Packing Material / Gunnies (in gms)"
+                android:inputType="number"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="12. Supplier Name  (Agent / Broker)"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithSupplierName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Supplier Name  (Agent / Broker)"
+                android:inputType="text"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="13. NCML Gate Pass No"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithNCMLGatePassNo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="NCML Gate Pass No"
+                android:inputType="text"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="14. Lorry Receipt (LR)/Goods Receipt (GR) No"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithLRGRNo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Lorry Receipt (LR)/Goods Receipt (GR) No"
+                android:inputType="text"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="15. No. of Bags"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithNoOfBags"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="No. of Bags"
+
+                android:inputType="number"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="16. Weight of Empty Gunnies (in MT) "
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithWgtOfEmtGunnies"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Weight of Empty Gunnies (in MT) "
+                android:inputType="text"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="17. Weigh - Bridge Name"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithpWgtBdgName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Weight - Bridge Name"
+                android:inputType="text"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="18. Weigh - Bridge Slip No"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithWgtBdgSlNo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Weight - Bridge Slip No"
+                android:inputType="text"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="19. Dist. of Weigh Bridge from Godown (Kms)"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithDistOfWgtBdgfmGod"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Distance of Weight Bridge from Godown (Kms)"
+                android:inputType="number"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="20. Weigh - Bridge (Time In)"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithWgtBdgTmIn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Weight - Bridge (Time In)"
+                android:inputType="text"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="21. Weigh - Bridge (Time Out)"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithWgtBdgTmOut"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Weight - Bridge (Time Out)"
+                android:inputType="text"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="22. Total Weight (Truck + Cargo)in MT"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithTtlWgt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Total Weight (Truck + Cargo)in MT"
+                android:inputType="number"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="23. Tare Wt. in MT"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithTareWgt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Tare Wt. in MT"
+                android:inputType="number"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="24. Gross Wt. in Mt (Incl. of Gunnies Weight) "
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <TextView
+                android:id="@+id/txtWithGrsWgt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:gravity="center|left"
+                android:hint="Gross Wt. in Mt (inclusive of Weight of Gunnies) "
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorLight" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="25. Net wt. in MT (Exclusive of Gunnies)"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <TextView
+                android:id="@+id/txtWithNetWgt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:gravity="center|left"
+                android:hint="Net wt. in MT (Exclusive of Gunnies)"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorLight" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="26. Average Wt. Per Bag in Kgs"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <TextView
+                android:id="@+id/txtWithAvgWgt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:gravity="center|left"
+                android:hint="Average Wt. Per Bag in Kgs"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorLight" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="27. No. of Cut Tom Bags received frm Truck"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithNoOfCutTomBags"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="No. of Cut and Tom Bags received from the Truck"
+                android:inputType="number"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="28. No. of Palla Bags"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithNoOfPallaBags"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="No. of Palla Bags"
+                android:inputType="number"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="29. Moisture"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithDepMoisture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Moisture"
+                android:inputType="number"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="30. Foreign Matter"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithForeignMatter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Foreign Matter"
+                android:inputType="text"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="31. Fungus+dmg+discolored"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithFungusDmgDiscol"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Fungus+dmg+discolored"
+                android:inputType="text"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="32. Broken+immature+other seed"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithBrkImtrOtherSeed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Broken+immature+other seed"
+                android:inputType="text"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="33. Weevilled"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithWeevilled"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Weevilled"
+                android:inputType="text"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="34. Live Inssects"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithLiveInssects"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Live Inssects"
+                android:inputType="text"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="35. Remarks"
+            android:textColor="@color/textColorB"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/etxtWithRemarks"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Remarks"
+                android:inputType="text"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorB" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnWithPtTruckFrontSide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/take_pic"
+            android:text="Photo of Truck - Front side"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/textColorB"
+            android:textStyle="bold" />
+        <!--android:onClick="DptakePicFrontSide"-->
+
+        <ImageView
+            android:id="@+id/ivWithPtTruckFrontSide"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border_common"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <Button
+            android:id="@+id/btnWithPtTruckRearSide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/take_pic"
+            android:text="Photo of Truck - Rear side"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/textColorB"
+            android:textStyle="bold" />
+        <!--android:onClick="DptakePicRearSide"-->
+        <ImageView
+            android:id="@+id/ivWithPtTruckRearSide"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border_common"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <Button
+            android:id="@+id/btnWithPtDepositor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/take_pic"
+            android:text="Photo of depositor"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/textColorB"
+            android:textStyle="bold" />
+        <!--android:onClick="DptakePicDepositor"-->
+        <ImageView
+            android:id="@+id/ivWithPtDepositor"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border_common"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <Button
+            android:id="@+id/btnWithPtEmp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/take_pic"
+            android:text="Photo of employee accepting goods"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/textColorB"
+            android:textStyle="bold" />
+        <!--android:onClick="DptakePicPtEmp"-->
+        <ImageView
+            android:id="@+id/ivWithPtEmp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border_common"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <Button
+            android:id="@+id/btnWithPtSmpTkn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/take_pic"
+            android:text="Photo of sample taken"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/textColorB"
+            android:textStyle="bold" />
+        <!--android:onClick="DptakePicPtSmpTkn"-->
+
+        <ImageView
+            android:id="@+id/ivWithPtSmpTkn"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border_common"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <Button
+            android:id="@+id/Withbutton_submit_Next"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llfinalAdd"
+            android:background="@drawable/submit"
+            android:text="@string/next_lbl"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <!--android:onClick="submitDepositNext"-->
+    </LinearLayout>
+
+</ScrollView>

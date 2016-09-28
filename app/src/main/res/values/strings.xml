@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NCML</string>
+    <string name="app_Version">V 2.7</string>
+    <string name="app_VersionBuild" translatable="false">2.7</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="action_refresh">Refresh</string>
+
+    <!--  Deposit -->
+    <string name="dpt_Wht_of_Packing">Weight of Packing Material / Gunnies (in gms)</string>
+
+    <array name="array_testing">
+        <item>Select</item>
+    </array>
+
+    <!--Attendance layout string values-->
+    <string name="attendance_lbl" translatable="false">Attendance</string>
+    <string name="id_lbl">ID</string>
+    <string name="emp_id_lbl">Emp Id</string>
+    <string name="emp_name_id_lbl">Emp Name</string>
+    <string name="on_behalf_id_lbl">On Behalf ID</string>
+    <string name="radius_in_details_lbl">Radius (In Meters)</string>
+    <string name="geotech_lbl">GEO Tag</string>
+    <string name="segment_lbl">Segment</string>
+    <string name="district_lbl">District</string>
+    <string name="type_lbl">Particulars</string>
+    <string name="godown_lbl">Godown</string>
+    <string name="name_lbl">Name</string>
+    <string name="deposit_lbl">Depositor</string>
+    <string name="name_of_godown_owner_lbl">Name of Godown Owner</string>
+    <string name="location_lbl">Location</string>
+    <string name="bank_survey_lbl">Bank Survey</string>
+    <string name="bank_lbl">Bank</string>
+    <string name="survey_done_by_name_lbl">Survey Done By  Name</string>
+    <string name="date_time_lbl">Date And Time</string>
+    <string name="date_lbl">Date</string>
+    <string name="designation_lbl">Designation </string>
+    <string name="remarks_lbl">Remarks</string>
+
+    <string name="values_lbl">Values</string>
+    <string name="remarks_hint_lbl">Enter your remark if Godown Not Selected</string>
+    <string name="take_a_photo_lbl">TAKE A PHOTO</string>
+    <string name="submit_lbl">SUBMIT</string>
+    <string name="lan_lbl">Latitude</string>
+    <string name="lat_lbl">Longitute</string>
+    <string name="logo_tag_lbl">We understand commodities</string>
+    <string name="mobile_no_lbl">Mobile Number</string>
+    <string name="imei_no_lbl">IMEI NO</string>
+    <string name="employee_id_lbl">EMPLOYEE ID</string>
+    <string name="password_lbl">PASSWORD</string>
+    <string name="button_attendance_lbl">ATTENDANCE</string>
+    <string name="button_geo_tag">GEO TAG MAPPING</string>
+
+    <string name="forgot_password_lbl">Forgot Password ?</string>
+    <string name="state_lbl">State</string>
+
+    <string name="auditor_lbl">Auditor</string>
+    <string name="warehouse_lbl">WareHouse</string>
+    <string name="entry_type_lbl">Entry Type</string>
+    <string name="entry_type_value_lbl">FRESH</string>
+    <string name="audit_type_lbl">Audit Type</string>
+    <string name="addres_lbl">Address</string>
+    <string name="form_no_lbl">FORM NO.</string>
+    <string name="godown_addres_lbl">Godown Address</string>
+    <string name="cc_location_lbl">CC of Location</string>
+    <string name="comodity_lbl">Commodity</string>
+    <string name="variety_lbl">Variety</string>
+    <string name="next_lbl">Next</string>
+    <string name="adding_lbl">Add</string>
+    <string name="contact_lbl">Contact No </string>
+    <string name="inspection_lbl">Inspection No </string>
+    <string name="cdf_no_lbl">CDF No </string>
+    <string name="response_lbl">Response : </string>
+    <string name="yse_lbl">Yes</string>
+    <string name="button_delete_lbl">Remove</string>
+    <string name="no_lbl">No</string>
+
+    <string name="detail_NoOfStacks">No. of Stacks where deep digging is done to check the quality inside the stacks</string>
+    <string name="detail_ReasonNotStack">Reason for not conducting deep digging</string>
+    <string name="detail_NoOfSamples">No. of Samples sent to CommGrade for Lab Testing</string>
+    <string name="detail_ReasonNotSamples">Reason for not sending samples to CommGrade for Lab Testing</string>
+    <string name="detail_AuditSummary">Audit Summary</string>
+
+    <string name="detail_1_lbl">Financial Remark</string>
+    <string name="detail_2_lbl">Quality Remark</string>
+    <string name="audit_summary_lbl">Over Ruled Remark</string>
+    <string name="audit_point_lbl">Audit Point</string>
+
+    <string name="enter_remark_lbl">Remark</string>
+    <string name="button_add_lbl">ADD</string>
+    <string name="date_survey_lbl">Survey Date </string>
+    <string name="branch_lbl">Branch </string>
+    <string name="pin_code_lbl">Pin Code </string>
+    <string name="no_of_godowns_lbl">No Of Godowns</string>
+    <string name="email_lbl">Enter E-mail </string>
+
+
+    <array name="array_godown">
+        <item>SELECT GODOWN</item>
+        <!--<item>Godown 1</item>
+        <item>Godown 2</item>
+        <item>Godown 3</item>-->
+    </array>
+
+    <array name="array_audit_point">
+        <!--<item>Audit Point 1</item>
+        <item>Audit Point 2</item>
+        <item>Audit Point 3</item>-->
+    </array>
+
+
+    <array name="array_respones_row">
+        <item>Select Respones</item>
+        <item>YES</item>
+        <item>NO</item>
+        <item>N/A</item>
+    </array>
+
+
+    <array name="array_warehouse">
+        <!--<item>WareHouse 1</item>
+        <item>WareHouse 2</item>
+        <item>WareHouse 3</item>-->
+    </array>
+
+
+    <array name="array_state">
+        <!--<item>State 1</item>
+        <item>State 2</item>
+        <item>State 3</item>-->
+    </array>
+
+    <array name="array_audit_type">
+        <!--<item>Audit Type 1</item>
+        <item>Audit Type 2</item>
+        <item>Audit Type 3</item>-->
+    </array>
+
+
+
+    <array name="array_segment_id">
+        <!--<item>Segment Id 1</item>
+        <item>Segment Id 2</item>
+        <item>Segment Id 3</item>-->
+    </array>
+
+    <array name="array_yes_no">
+        <item>YES</item>
+        <item>NO</item>
+
+    </array>
+
+    <array name="array_location">
+       <!-- <item>Location 1</item>
+        <item>Location 2</item>
+        <item>Location 3</item>-->
+    </array>
+
+    <string name="title_activity_attendance">Employee Attendance</string>
+    <string name="title_activity_geo_tag_mapping">GeoTag Mapping</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_godown_audit">Godown Audit</string>
+    <string name="button_godown_audit">GODOWN AUDIT</string>
+    <string name="button_cdf">CDF</string>
+    <string name="button_deposit">DEPOSIT</string>
+    <string name="button_wirthdrawal">WIRTHDRAWAL</string>
+    <string name="title_activity_update_database">Update Database</string>
+    <string name="button_send_mail">SEND MAIL</string>
+    <string name="button_update_local_database">UPDATE DATABASE</string>
+    <string name="button_wareouse_inspection">WAREHOUSE INSPECTION</string>
+    <string name="title_activity_auditpoin_details">Audit Point Details</string>
+    <string name="title_activity_audit_point_details">Audit Point Details</string>
+    <string name="title_activity_audit_point_final">Audit Point Details</string>
+    <string name="title_activity_warehouse_inspection">Warehouse Inspection</string>
+    <string name="title_activity_ware_house_insepction_dynamic_grid">Warehouse Inspection</string>
+    <string name="title_activity_cdf">CDF</string>
+    <string name="title_activity_forgot_password">Forgot Password</string>
+
+    <!-- Email Id -->
+    <string name="email_username">dishaact@gmail.com</string>
+    <string name="email_password">dishaact2010</string>
+
+    <string name="update_database">Update</string>
+    <string name="title_activity_deposit">Deposit</string>
+
+    
+</resources>

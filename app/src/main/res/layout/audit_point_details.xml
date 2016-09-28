@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="100"
+    android:background="@drawable/loging_outer"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="@string/audit_point_lbl"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/button_material_light"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:weightSum="100">
+
+        <Spinner
+            android:id="@+id/spinner_audit_point"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:background="@android:color/white"
+            android:entries="@array/array_audit_point" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:background="@android:color/darker_gray"
+            android:src="@mipmap/ic_action_navigation_expand_more" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/response_lbl"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_respones"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_button_yes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/yse_lbl" />
+
+            <RadioButton
+                android:id="@+id/radio_button_no"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/no_lbl" />
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/button_material_light"
+            android:gravity="center"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/edit_text_remark"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:hint="@string/remarks_lbl"
+                android:inputType="text"
+                android:paddingLeft="5dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_add_audit_point_details"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/submit"
+            android:clickable="true"
+            android:text="@string/button_add_lbl"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:layout_weight="80"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_audit_detail_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/transparent"
+            >
+
+
+            <!--<ListView
+                android:id="@+id/list_view_audit_point_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                android:dividerHeight="5dp"
+                android:divider="#E9E9E9"/>-->
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/edit_text_detail_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:gravity="center|left"
+                    android:hint="@string/detail_1_lbl"
+                    android:inputType="text"
+                    android:paddingLeft="2dp"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/button_material_light"
+                android:padding="1dp">
+
+                <EditText
+                    android:id="@+id/edit_text_detail_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:gravity="center|left"
+                    android:hint="@string/detail_2_lbl"
+                    android:inputType="text"
+                    android:paddingLeft="2dp"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:background="@color/button_material_light"
+            android:padding="1dp">
+
+            <EditText
+                android:id="@+id/edit_text_audit_summary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@android:color/white"
+                android:gravity="center|left|top"
+                android:hint="@string/audit_summary_lbl"
+                android:inputType="text"
+                android:paddingLeft="2dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+-->
+    <Button
+        android:id="@+id/button_next_audit_point_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/submit"
+        android:text="@string/next_lbl"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>

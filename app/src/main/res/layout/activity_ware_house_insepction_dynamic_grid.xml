@@ -1,0 +1,247 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loging_outer"
+    android:padding="10dp"
+    tools:context="com.coder.sample.WareHouseInsepctionDynamicGrid">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_submit">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/border_trans"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/type_lbl"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/textColorB"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@drawable/border_common"
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:weightSum="100">
+
+                    <Spinner
+                        android:id="@+id/spinner_particular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="100"
+                        android:background="@drawable/border_dropdown"
+                        android:entries="@array/array_segment_id" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/name_lbl"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/textColorB"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@drawable/border_common"
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:weightSum="100">
+
+                    <Spinner
+                        android:id="@+id/spinner_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="100"
+                        android:background="@drawable/border_dropdown"
+                        android:entries="@array/array_segment_id" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/values_lbl"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/textColorB"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@drawable/border_common"
+                    android:padding="1dp"
+                    android:visibility="gone">
+
+                    <TextView
+
+                        android:id="@+id/textview_date_pickaer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:paddingLeft="2dp"
+
+                        android:text="@string/date_time_lbl"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textColor="@color/textColorLight" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@drawable/border_common"
+                    android:padding="1dp"
+                    android:visibility="gone">
+
+                    <EditText
+
+                        android:id="@+id/edit_text_values"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:hint="@string/values_lbl"
+                        android:inputType="text"
+                        android:paddingLeft="2dp"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textColor="@color/textColorB" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@drawable/border_common"
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:visibility="gone"
+                    android:weightSum="100">
+
+                    <Spinner
+                        android:id="@+id/spinner_values"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="100"
+                        android:background="@drawable/border_dropdown"
+                        android:entries="@array/array_yes_no" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/remarks_lbl"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/textColorB"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@drawable/border_common"
+                    android:padding="1dp">
+
+                    <EditText
+
+                        android:id="@+id/edit_text_remarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:hint="@string/remarks_lbl"
+                        android:inputType="text"
+                        android:paddingLeft="2dp"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textColor="@color/textColorB" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/submit"
+                    android:onClick="warehouseInspectionAdd"
+                    android:text="@string/adding_lbl"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </LinearLayout>
+
+            <!-- <ScrollView
+                 android:layout_width="match_parent"
+                 android:layout_height="100dp"
+                 android:layout_above="@+id/button_submit"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true"
+                 android:layout_below="@+id/linearLayout"
+                 android:layout_marginBottom="8dp"
+                 android:layout_marginTop="8dp"
+                 android:fillViewport="false"
+                 >-->
+
+            <LinearLayout
+                android:id="@+id/linear_layout_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_trans"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/submit"
+        android:onClick="warehouseInspectionSubmit"
+        android:text="@string/submit_lbl"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

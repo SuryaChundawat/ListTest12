@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.coder.sample" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    //Added new by Rajesh 05.05.2016  ------------
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    //--------
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:icon="@mipmap/company_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+
+
+        >
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter> v
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.coderbroadcast.ConnectivityReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <!-- <action android:name="android.net.wifi.WIFI_STATE_CHANGED" /> -->
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".AttendanceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_attendance"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".GPSTracker"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".GeoTagMappingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_geo_tag_mapping"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GodownAuditActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_godown_audit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AuditPointDetailsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_audit_point_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AuditPointFinalActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_audit_point_final"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".WarehouseInspectionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_warehouse_inspection"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".WareHouseInsepctionDynamicGrid"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_ware_house_insepction_dynamic_grid"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CDFActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_cdf"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" >
+        </activity>
+        <activity
+            android:name=".UpdateDatabase"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_update_database"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.forgot.mail.ForgotPassword"
+            android:label="@string/title_activity_forgot_password" >
+        </activity>
+        <activity
+            android:name=".DepositActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_deposit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan"/>
+
+        <activity
+            android:name=".DepositeNextActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="DEPOSITE NEXT"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan"/><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <!--            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+    </application>
+
+</manifest>

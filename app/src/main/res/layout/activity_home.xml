@@ -1,0 +1,629 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.coder.sample.HomeActivity"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loging_outer">
+
+            <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:id="@+id/linear_mid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:id="@+id/llModule1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/llbtn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp">
+
+                <RelativeLayout
+                        android:id="@+id/rlbtn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/button_attendance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="20dp"
+                            android:background="@drawable/submit"
+                            android:onClick="attendanceOnclick"
+                            android:text="@string/button_attendance_lbl"
+                            android:visibility="visible"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:src="@mipmap/attendance"/>
+
+                    <TextView
+                        android:id="@+id/txtAttendanceCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding = "5dp"
+                        android:layout_margin="5dp"
+                        android:layout_alignRight="@+id/button_attendance"
+                        android:background="@drawable/take_pic"
+                        android:text = ""
+                        android:textColor="@android:color/white" />
+
+
+                    <TextView
+                        android:id="@+id/txtAttendancelbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding = "5dp"
+                        android:text="@string/button_attendance_lbl"
+                        android:visibility="visible"
+                        android:textSize="10dp"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:layout_alignBottom="@+id/button_attendance"
+                        android:layout_centerHorizontal="true" />
+
+                </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llbtn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rlbtn2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/button_geo_tag_mapping"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="20dp"
+                            android:background="@drawable/submit"
+                            android:onClick="geoTagMapping"
+                            android:text="@string/button_geo_tag"
+                            android:visibility="visible"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:src="@mipmap/geotagmapping"/>
+
+                        <TextView
+                            android:id="@+id/txtGeoTagMappingCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding = "5dp"
+                            android:layout_margin="5dp"
+                            android:layout_alignRight="@+id/button_geo_tag_mapping"
+                            android:background="@drawable/take_pic"
+                            android:text = ""
+                            android:textColor="@android:color/white" />
+
+
+                        <TextView
+                            android:id="@+id/txtGeoTagMappinglbl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding = "5dp"
+                            android:text="@string/button_geo_tag"
+                            android:visibility="visible"
+                            android:textSize="10dp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:layout_alignBottom="@+id/button_geo_tag_mapping"
+                            android:layout_centerHorizontal="true" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llModule2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/llbtn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rlbtn3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/button_godown_audit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="20dp"
+                            android:background="@drawable/submit"
+                            android:onClick="godownAudit"
+                            android:text="@string/button_godown_audit"
+                            android:visibility="visible"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:src="@mipmap/godownaudit"/>
+
+                        <TextView
+                            android:id="@+id/txtGodownAuditCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding = "5dp"
+                            android:layout_margin="5dp"
+                            android:layout_alignRight="@+id/button_godown_audit"
+                            android:background="@drawable/take_pic"
+                            android:text = ""
+                            android:textColor="@android:color/white" />
+
+
+                        <TextView
+                            android:id="@+id/txtGodownAuditlbl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding = "5dp"
+                            android:text="@string/button_godown_audit"
+                            android:visibility="visible"
+                            android:textSize="10dp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:layout_alignBottom="@+id/button_godown_audit"
+                            android:layout_centerHorizontal="true" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llbtn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rlbtn4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/button_warehouse_inspection"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="20dp"
+                            android:background="@drawable/submit"
+                            android:onClick="warehouseInspection"
+                            android:text="@string/button_wareouse_inspection"
+                            android:visibility="visible"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:src="@mipmap/warehouseinspection"/>
+
+                        <TextView
+                            android:id="@+id/txtWarehouseInspectionCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding = "5dp"
+                            android:layout_margin="5dp"
+                            android:layout_alignRight="@+id/button_warehouse_inspection"
+                            android:background="@drawable/take_pic"
+                            android:text = ""
+                            android:textColor="@android:color/white" />
+
+
+                        <TextView
+                            android:id="@+id/txtWarehouseInspectionlbl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding = "5dp"
+                            android:text="@string/button_wareouse_inspection"
+                            android:visibility="visible"
+                            android:textSize="10dp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:layout_alignBottom="@+id/button_warehouse_inspection"
+                            android:layout_centerHorizontal="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/llModule3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/llbtn5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rlbtn5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/button_cdf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="20dp"
+                            android:background="@drawable/submit"
+                            android:onClick="deposit"
+                            android:text="@string/button_deposit"
+                            android:visibility="visible"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:src="@mipmap/cdf"
+                            android:enabled="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:id="@+id/txDepositCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding = "5dp"
+                            android:layout_margin="5dp"
+                            android:layout_alignRight="@+id/button_cdf"
+                            android:background="@drawable/take_pic"
+                            android:text = ""
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/txtCdflbl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding = "5dp"
+                            android:text="@string/button_deposit"
+                            android:visibility="visible"
+                            android:textSize="10dp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:layout_alignBottom="@+id/button_cdf"
+                            android:layout_centerHorizontal="true" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/btnWirthdrawal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/btnWirhtdral2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button_wirthdral"
+                            android:background="@drawable/submit"
+                            android:src="@mipmap/cdf"
+                            android:paddingBottom="20dp"
+                            android:text="@string/button_wirthdrawal"
+                            android:visibility="visible"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:onClick="withdrawalClick"
+                            android:enabled="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_margin="5dp"
+                            android:layout_alignRight="@+id/button_wirthdral"
+                            android:id="@+id/txWithdrawal"
+                            android:background="@drawable/take_pic"
+                            android:text=""
+                            android:textColor="#ffffff"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/button_wirthdrawal"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            android:textColor="#ffffff"
+                            android:padding="5dp"
+                            android:visibility="visible"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+               <!-- <LinearLayout
+                    android:id="@+id/llbtn6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rlbtn6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/button_updatedatabase"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="20dp"
+                            android:background="@drawable/submit"
+                            android:onClick="updateLocalDatabase"
+                            android:text="@string/button_update_local_database"
+                            android:visibility="visible"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:src="@mipmap/updatedatabase"/>
+
+
+
+                        <TextView
+                            android:id="@+id/txtUpdateDatabaselbl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding = "5dp"
+                            android:text="@string/button_update_local_database"
+                            android:visibility="visible"
+                            android:textSize="10dp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:layout_alignBottom="@+id/button_updatedatabase"
+                            android:layout_centerHorizontal="true" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                >
+
+            <LinearLayout
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/llModule4"
+                android:weightSum="2"
+                android:visibility="gone"
+                >
+                <LinearLayout
+                    android:id="@+id/btnWirthdrawalDiseble"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/btnWirhtdral2Diseble"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button_wirthdralDiseble"
+                            android:background="@drawable/submit"
+                            android:src="@mipmap/cdf"
+                            android:paddingBottom="20dp"
+                            android:text="@string/button_wirthdrawal"
+                            android:visibility="visible"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:onClick="withdrawalClick"
+                            android:enabled="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_margin="5dp"
+                            android:layout_alignRight="@+id/button_wirthdralDiseble"
+                            android:id="@+id/txWithdrawalDiseble"
+                            android:background="@drawable/take_pic"
+                            android:text=""
+                            android:textColor="#ffffff"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/button_wirthdrawal"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            android:textColor="#ffffff"
+                            android:padding="5dp"
+                            android:visibility="visible"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:id="@+id/llbtn6"
+                        android:layout_width="181dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="8dp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/rlbtn6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <ImageView
+                                android:id="@+id/button_updatedatabase"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="20dp"
+                                android:background="@drawable/submit"
+                                android:onClick="updateLocalDatabase"
+                                android:text="@string/button_update_local_database"
+                                android:visibility="visible"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold"
+                                android:src="@mipmap/updatedatabase"/>
+
+
+
+                            <TextView
+                                android:id="@+id/txtUpdateDatabaselbl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding = "5dp"
+                                android:text="@string/button_update_local_database"
+                                android:visibility="visible"
+                                android:textSize="10dp"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold"
+                                android:layout_alignBottom="@+id/button_updatedatabase"
+                                android:layout_centerHorizontal="true" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDeleteloc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_mid"
+            android:padding="10dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/txtAttendanceCountloc"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/submit"
+                android:onClick="DeleteAllLocalWarehouseInspection"
+                android:hint = "Delete Local Warehouse Inspection"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:src="@mipmap/warehouseinspection"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

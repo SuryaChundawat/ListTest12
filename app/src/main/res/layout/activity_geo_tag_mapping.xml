@@ -1,0 +1,296 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loging_outer"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbars="none"
+    tools:context="com.coder.sample.GeoTagMappingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/id_lbl"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/textColorB"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <TextView
+
+                android:id="@+id/textview_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingLeft="2dp"
+                android:text="@string/id_lbl"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorLight" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/emp_id_lbl"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/textColorB"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <TextView
+
+                android:id="@+id/textview_emp_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="@string/emp_id_lbl"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorLight" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/geotech_lbl"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/textColorB"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_common"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/text_view_latitute"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:gravity="center|left"
+                    android:hint="@string/lan_lbl"
+                    android:paddingLeft="2dp"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/textColorLight" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_common"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/text_view_longitute"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:gravity="center|left"
+                    android:hint="@string/lat_lbl"
+                    android:paddingLeft="2dp"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/textColorLight" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/segment_lbl"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/textColorB"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:weightSum="100">
+
+            <Spinner
+                android:id="@+id/spinner_segment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:background="@drawable/border_dropdown"
+                android:entries="@array/array_segment_id" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/state_lbl"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/textColorB"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+
+            <Spinner
+                android:id="@+id/spinner_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:background="@drawable/border_dropdown"
+                android:entries="@array/array_location" />
+
+            <!--<TextView
+                android:id="@+id/textview_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorLight"
+                android:paddingLeft="2dp"
+                android:text="@string/state_lbl"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+-->
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/location_lbl"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/textColorB"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:weightSum="100">
+
+            <Spinner
+                android:id="@+id/spinner_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:background="@drawable/border_dropdown"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/godown_lbl"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/textColorB"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_common"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:weightSum="100">
+
+            <Spinner
+                android:id="@+id/spinner_godown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:background="@drawable/border_dropdown"
+                android:entries="@array/array_godown" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/godown_addres_lbl"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/textColorB"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:background="@drawable/border_common"
+            android:padding="1dp">
+
+            <TextView
+                android:id="@+id/textview_godown_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="@string/godown_addres_lbl"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textColorLight" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/submit"
+            android:onClick="geoTagSubmit"
+            android:text="@string/submit_lbl"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</ScrollView>

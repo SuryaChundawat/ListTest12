@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loging_outer"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:scrollbars="none"
+    tools:context="com.coder.sample.AuditPointFinalActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/loging_outer"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llfinalaudit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNoOfStacks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/detail_NoOfStacks"
+                android:textColor="@color/textColorB"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@drawable/border_common"
+                android:padding="1dp">
+
+                <EditText
+                    android:id="@+id/etxtNoOfStacks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/textColorB"
+                    android:inputType="number"
+                    android:paddingLeft="2dp"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtReasonNotStack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_ReasonNotStack"
+                android:textColor="@color/textColorB"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@drawable/border_common"
+                android:padding="1dp">
+
+                <EditText
+
+                    android:id="@+id/etxtReasonNotStack"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/textColorB"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="2dp"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:gravity="top" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtNoOfSamples"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_NoOfSamples"
+                android:textColor="@color/textColorB"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@drawable/border_common"
+                android:padding="1dp">
+
+                <EditText
+
+                    android:id="@+id/etxtNoOfSamples"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/textColorB"
+                    android:inputType="number"
+                    android:paddingLeft="2dp"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtReasonNotSamples"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_ReasonNotSamples"
+                android:textColor="@color/textColorB"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@drawable/border_common"
+                android:padding="1dp">
+
+                <EditText
+
+                    android:id="@+id/etxtReasonNotSamples"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/textColorB"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="2dp"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:gravity="top" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtAuditSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_AuditSummary"
+                android:textColor="@color/textColorB"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_common"
+                android:padding="1dp"
+                android:layout_marginBottom="10dp">
+
+                <EditText
+                    android:id="@+id/edit_text_detail_1_audit_point_details_final"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|left|top"
+                    android:inputType="text"
+                    android:paddingLeft="2dp"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/textColorB"
+                    android:textColorHint="@color/textColorLight"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_common"
+                android:padding="1dp"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/edit_text_detail_2_audit_point_details_final"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|left|top"
+                    android:hint="@string/detail_2_lbl"
+                    android:inputType="text"
+                    android:paddingLeft="2dp"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/textColorB"
+                    android:textColorHint="@color/textColorLight"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_common"
+                android:padding="1dp"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/edit_text_audit_summary_audit_point_details_final"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|left|top"
+                    android:hint="@string/audit_summary_lbl"
+                    android:inputType="text"
+                    android:paddingLeft="2dp"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/textColorB"
+                    android:textColorHint="@color/textColorLight"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/button_submit_audit_point_details_final"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llfinalaudit"
+            android:background="@drawable/submit"
+            android:onClick="submitFinalAudit"
+            android:text="@string/submit_lbl"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</ScrollView>
