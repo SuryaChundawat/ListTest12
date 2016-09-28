@@ -25,7 +25,7 @@ public class AuditPointDetailsAdapter extends BaseAdapter {
     private LayoutInflater inflater;
     private Context context;
 
-    //update
+    //update1.2
 
     public AuditPointDetailsAdapter(Context context, ArrayList<AuditPoinDetailsPojo> list) {
         this.context = context;
