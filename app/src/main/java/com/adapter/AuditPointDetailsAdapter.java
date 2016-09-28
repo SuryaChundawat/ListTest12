@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -25,6 +24,8 @@ public class AuditPointDetailsAdapter extends BaseAdapter {
     private ArrayList<AuditPoinDetailsPojo> list;
     private LayoutInflater inflater;
     private Context context;
+
+    //update
 
     public AuditPointDetailsAdapter(Context context, ArrayList<AuditPoinDetailsPojo> list) {
         this.context = context;
